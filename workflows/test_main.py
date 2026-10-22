@@ -9,6 +9,6 @@ def test_read_root():
     assert response.json() == {"mensagem": "API funcionando!"}
 
 def test_somar():
-    response = client.get("/somar/5/3")
+    response = client.get("/somar/10/20")
     assert response.status_code == 200
-    assert response.json() == {"resultado": 8}
+    assert response.json() == {"resultado": 30}
